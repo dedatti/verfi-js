@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+
+            <p>
+                Ano de Nascimento: <input type="number" name="ano" id="ano">
+            </p>
+
+            <p>
+                Sexo:<input type="radio" name="radsex" id="masc" checked> <!-- a propriedade name tem que ter o mesmo nome nos dois input, assim deixando que eu marque apenas 1 radio, inves dos 2, tambem sendo preciso ser selecionados por DOM getelementsbyName-->
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+
+        </div>
+
+        <div id="res">
+            Preencher os dados acima para ver o resultado!
+        </div>
+
+    </section>
+
+    <footer>
+        <p> &copy; CaikyDedate</p>
+    </footer>   
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
